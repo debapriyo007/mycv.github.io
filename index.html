@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debapriyo das</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+   
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="/images/logo.png" class="logo" alt="logo"> -->
+                <ul id="sidemenu">
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <i class="fas fa-times"></i>
+                     <img class="fas" src="./images/cross2-removebg-preview.png" onclick="closemenu()" width="23">
+                </ul>
+               <img class="fas" src="./images/menu bar.png" onclick="openmenu()" width="23">
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm</h1>
+                <div class="das">
+                    <h1><span> Debapriyo </span>Das</h1>
+                </div>
+                <div class="about">Developer,Code Lover,Beat prod...</div>
+                <div class="moreabout">I am a second year student study B.Tech (CSE) at Bengal Insititute Of Technology. <br> I love to do coding.I am very interesting about new technology like Artificial Intelligence and Machine Learning..</div>
+            </div>
+          <!-- for button format -->
+
+            <div class="bottons">
+                <a href="./images/THANK YOU.pdf" target="_blank">
+                    <button class="btn">Downlode </button></a>
+                <a href="contact.html">
+                    <button class="btn">Contact Me</button></a>
+
+            </div>
+
+             <!-- for pic format -->
+            <!-- <div class="pic">
+                <img src="/images/imagemy2.jpg" alt=" debapriyo">
+            </div> -->
+
+
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>

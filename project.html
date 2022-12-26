@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debapriyo das</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a0fd8a37ad.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="/images/logo.png" class="logo" alt="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <img class="fas" src="./images/cross2-removebg-preview.png" onclick="closemenu()" width="23">
+
+                </ul>
+                <img class="fas" src="./images/menu bar.png" onclick="openmenu()" width="23">
+            </nav>
+           <!-- ------------poject------------- -->
+            <div id="project">
+                <div class="container3">
+                    <h1 class="sub-title1">My Project</h1>
+                    <div class="worklist">
+                        <div class="work">
+                            <img src="./images/proj1.png" alt="project-1">
+                            <div class="layer">
+                                <h3>Web-Sites</h3>
+                                <p>We are all around web-sites.Now days its very importnant for starting anything.So why are you wasting time check my web-site immediately</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./images/project22.png" alt="project-1">
+                            <div class="layer">
+                                <h3>Logo Creating</h3>
+                                <p>We are all around web-sites.Now days its very importnant for starting anything.So why are you wasting time check my web-site immediately</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./images/proj33.jpg" alt="project-1">
+                            <div class="layer">
+                                <h3>Marketing</h3>
+                                <p>We are all around web-sites.Now days its very importnant for starting anything.So why are you wasting time check my web-site immediately</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"class="btn1">See More</a>
+
+
+                </div>
+            </div> 
+          
+
+
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+  
+</body>
+
+</html>

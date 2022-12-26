@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>debapriyo das</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="/images/logo.png" class="logo" alt="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <img class="fas" src="./images/cross2-removebg-preview.png" onclick="closemenu()" width="23">
+
+                </ul>
+                <img class="fas" src="./images/menu bar.png" onclick="openmenu()" width="23">
+            </nav>
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="./images/My image.jpg" alt="my image">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p class="pgr">My name is Debapriyo Das.Basically, I am from Santipur which is located in district Hugli ,Currently i am staying in Kolkata.I compleated my schooling from " Jharia Sri Ramkrishna Vidyapith(H.S) ".Recently i'm doing my graduation from Maulana Abul Kalam Azad University of Technology,West Bengal.My goal is to be a establish Software Engineer, for that i am keep hustling.I  love to play Cricket,Badminton and many out-door games and i also love to play in-door games like Chess,Croom -Board,Ludo.I like to listening Music,specially HIP-HOP favourits are @raftaarmusic,@realkrsna,@vivianakadivine...</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Data Structure</span><br>Programming is becoming a highly demand skill for software developers,and Data Structures and Algorithms is like them. it's a identity of a good Software Developer.</li>
+                                    <li><span>Java</span><br>I did't know about <b>Java</b> poperly.Recently i discorver java from the open source like many books,internets and there are also many sources.</li>
+                                    <li><span>CSS</span><br>CSS is one of my favourit Language. i love to do CSS.</li>
+                                    <li><span>Java Script</span><br>ERROR 404</li>
+                                    <li><span>C Language</span><br>Better exprience than other languages.It's my first language i learn college.This language is easy to larn.</li>
+                                    <li><span>Basic Python</span><br>I learn it little-bit.Which is learn from our college by our respective Sir or Madam.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="exprience">
+                                <ul>
+                                    <li><span>2021 - Current</span><br>I'm still Study To be honest i have no idea,but i
+                                        keep exploring gain knowledge and expriesces.</li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021 - Current </span><br>I'am Study at  Bengal Institute Of Technology</li>
+                                    <li><span>2020</span><br>Higher Secondary from  J.S.R.K.V(H.S)</li>
+                                    <li><span>2018</span><br>Secondary from J.S.R.K.V(H.S)</li>
+                                    <li><span>2015</span><br>Tally ERP-9 from  N.Y.C.S</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    
+</body>
+
+</html>
